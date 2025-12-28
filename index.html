@@ -2,217 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Engr Rizwan | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Engr Rizwan Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    /* NAVBAR */
-    nav {
-      background: #111;
-      padding: 12px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 25px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      color: #00adb5;
-    }
-
-    /* HERO */
-    header {
-      background: linear-gradient(to right, #00adb5, #393e46);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 42px;
-    }
-
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #00adb5;
-      font-size: 30px;
-    }
-
-    /* SKILLS */
-    .skill {
-      margin-bottom: 20px;
-    }
-
-    .skill span {
-      font-weight: bold;
-    }
-
-    .bar {
-      background: #ddd;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-top: 5px;
-    }
-
-    .bar div {
-      height: 14px;
-      background: #00adb5;
-    }
-
-    /* PROJECTS */
-    .project {
-      background: #f5f5f5;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-
-    /* CONTACT */
-    .contact p {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .contact a {
-      color: #00adb5;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #111;
-      color: white;
-      margin-top: 40px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 32px;
-      }
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
-
-  <!-- NAVBAR -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="font-bold text-xl">Engr Rizwan</div>
+      <div>
+        <a href="#about" class="px-3 hover:text-blue-500">About</a>
+        <a href="#skills" class="px-3 hover:text-blue-500">Skills</a>
+        <a href="#projects" class="px-3 hover:text-blue-500">Projects</a>
+        <a href="#contact" class="px-3 hover:text-blue-500">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="home">
-    <h1>Engr Rizwan Saqib</h1>
-    <p>Computer Systems Engineering Student | Arduino & C++ Enthusiast</p>
-  </header>
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-400 to-purple-500 text-white text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I’m Engr Rizwan</h1>
+    <h2 class="text-xl md:text-2xl">
+      <span id="typed"></span>
+    </h2>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ["CSE Student", "C++ Developer", "Python Programmer", "Robotics Enthusiast"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      });
+    </script>
+  </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
+  <!-- About Section -->
+  <section id="about" class="py-20 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="mb-4">I am a Computer System Engineering student at IBA Sukkur. I enjoy building robotics projects, programming in C++, Python, and creating web applications. I love solving real-world problems with technology and constantly improving my skills through practical projects.</p>
+    <p>My work ranges from mini radar systems to full C++ set operation systems, and interactive web apps using HTML, CSS, and JavaScript.</p>
+  </section>
 
-    <div class="skill">
-      <span>C++ Programming</span>
-      <div class="bar"><div style="width:75%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Arduino & Sensors</span>
-      <div class="bar"><div style="width:80%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>HTML & CSS</span>
-      <div class="bar"><div style="width:65%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Problem Solving</span>
-      <div class="bar"><div style="width:70%"></div></div>
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-200 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 bg-white rounded shadow">C++</div>
+      <div class="p-4 bg-white rounded shadow">Python</div>
+      <div class="p-4 bg-white rounded shadow">Arduino</div>
+      <div class="p-4 bg-white rounded shadow">HTML/CSS</div>
+      <div class="p-4 bg-white rounded shadow">JavaScript</div>
+      <div class="p-4 bg-white rounded shadow">Robotics</div>
+      <div class="p-4 bg-white rounded shadow">Problem Solving</div>
+      <div class="p-4 bg-white rounded shadow">Project Development</div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Object Avoiding Robot</h3>
-      <p>
-        Designed and implemented an Arduino-based robot that detects and avoids obstacles using ultrasonic sensors.
-        The robot intelligently moves toward a safe path where no obstacle is detected.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Basic C++ Programs</h3>
-      <p>
-        Implemented multiple C++ programs including factorial calculation, sum of numbers, minimum of two numbers,
-        and loop-based problem solving.
-      </p>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">Object Avoiding Robot</h3>
+        <p>Arduino-based robot that detects obstacles and avoids them intelligently.</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">Mini Radar System</h3>
+        <p>Developed a compact radar system using Arduino and sensors for distance measurement.</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">C++ Set Operation System</h3>
+        <p>Implemented set operations in C++ to perform union, intersection, difference, and subset checks.</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+        <p>My personal portfolio website hosted on GitHub Pages using HTML, CSS, and Tailwind CSS.</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">Python Automation Scripts</h3>
+        <p>Various Python scripts for data processing, file management, and task automation.</p>
+      </div>
+      <div class="bg-white shadow p-6 rounded">
+        <h3 class="text-xl font-bold mb-2">Web Applications</h3>
+        <p>Interactive web apps using JavaScript, HTML, and CSS for small-scale projects.</p>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rizwansaqib461@gmail.com">rizwansaqib461@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/rizwansaqib461-lang" target="_blank">github.com/rizwansaqib461-lang</a></p>
-    <p>LinkedIn: <a href="#">Add your LinkedIn link</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-200 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-lg mx-auto bg-white shadow p-6 rounded space-y-4">
+      <input type="text" name="name" placeholder="Name" class="w-full border px-3 py-2 rounded" required>
+      <input type="email" name="_replyto" placeholder="Email" class="w-full border px-3 py-2 rounded" required>
+      <textarea name="message" placeholder="Message" class="w-full border px-3 py-2 rounded" rows="4" required></textarea>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+    </form>
+    <p class="text-center mt-4 text-sm">You can also reach me via <a href="mailto:your.email@example.com" class="text-blue-500">email</a>.</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Engr Rizwan Saqib | All Rights Reserved</p>
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center">
+    &copy; 2025 Engr Rizwan. All rights reserved.
+    <div class="mt-2">
+      <a href="https://github.com/rizwansaqib461-lang" target="_blank" class="px-2 hover:text-blue-500">GitHub</a>|
+      <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" class="px-2 hover:text-blue-500">LinkedIn</a>
+    </div>
   </footer>
 
 </body>
 </html>
-
