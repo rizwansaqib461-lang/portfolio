@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engr Rizwan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #111;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #00adb5;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(to right, #00adb5, #393e46);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #00adb5;
+      font-size: 30px;
+    }
+
+    /* SKILLS */
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill span {
+      font-weight: bold;
+    }
+
+    .bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .bar div {
+      height: 14px;
+      background: #00adb5;
+    }
+
+    /* PROJECTS */
+    .project {
+      background: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* CONTACT */
+    .contact p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #00adb5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home">
+    <h1>Engr Rizwan Saqib</h1>
+    <p>Computer Systems Engineering Student | Arduino & C++ Enthusiast</p>
+  </header>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+      <span>C++ Programming</span>
+      <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Arduino & Sensors</span>
+      <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>HTML & CSS</span>
+      <div class="bar"><div style="width:65%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Problem Solving</span>
+      <div class="bar"><div style="width:70%"></div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Object Avoiding Robot</h3>
+      <p>
+        Designed and implemented an Arduino-based robot that detects and avoids obstacles using ultrasonic sensors.
+        The robot intelligently moves toward a safe path where no obstacle is detected.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Basic C++ Programs</h3>
+      <p>
+        Implemented multiple C++ programs including factorial calculation, sum of numbers, minimum of two numbers,
+        and loop-based problem solving.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rizwansaqib461@gmail.com">rizwansaqib461@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/rizwansaqib461-lang" target="_blank">github.com/rizwansaqib461-lang</a></p>
+    <p>LinkedIn: <a href="#">Add your LinkedIn link</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Engr Rizwan Saqib | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
